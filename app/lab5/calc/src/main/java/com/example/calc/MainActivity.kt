@@ -137,7 +137,7 @@ fun EditNumberField(
         modifier = modifier,
         onValueChange = onValueChanged,
         label = { Text(stringResource(label)) },
-        keyboardOptions = keyboardOptions
+        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
     )
 }
 

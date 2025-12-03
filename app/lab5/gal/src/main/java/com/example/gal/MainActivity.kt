@@ -47,31 +47,36 @@ fun ArtSpaceApp() {
             imageRes = R.drawable.artwork_1,
             title = "Звёздная ночь",
             artist = "Винсент Ван Гог",
-            year = "1889"
+            year = "1889",
+            backgroundColor = Color(0xFF1E3A8A)
         )
         2 -> ArtworkInfo(
             imageRes = R.drawable.artwork_2,
             title = "Девушка с жемчужной серёжкой",
             artist = "Ян Вермеер",
-            year = "1665"
+            year = "1665",
+            backgroundColor = Color(0xFF7C3AED)
         )
         3 -> ArtworkInfo(
             imageRes = R.drawable.artwork_3,
             title = "Постоянство памяти",
             artist = "Сальвадор Дали",
-            year = "1931"
+            year = "1931",
+            backgroundColor = Color(0xFFEAB308)
         )
         4 -> ArtworkInfo(
             imageRes = R.drawable.artwork_4,
             title = "Крик",
             artist = "Эдвард Мунк",
-            year = "1893"
+            year = "1893",
+            backgroundColor = Color(0xFFDC2626)
         )
         else -> ArtworkInfo(
             imageRes = R.drawable.artwork_5,
             title = "Великая волна в Канагаве",
             artist = "Кацусика Хокусай",
-            year = "1831"
+            year = "1831",
+            backgroundColor = Color(0xFF0891B2)
         )
     }
 
@@ -85,13 +90,16 @@ fun ArtSpaceApp() {
     ) {
         Spacer(modifier = Modifier.height(24.dp))
 
+        // Секция с изображением
         ArtworkWall(
             imageRes = artworkData.imageRes,
-            contentDescription = artworkData.title
+            contentDescription = artworkData.title,
+            backgroundColor = artworkData.backgroundColor
         )
 
         Spacer(modifier = Modifier.height(32.dp))
 
+        // Секция с описанием
         ArtworkDescriptor(
             title = artworkData.title,
             artist = artworkData.artist,
@@ -100,6 +108,7 @@ fun ArtSpaceApp() {
 
         Spacer(modifier = Modifier.height(24.dp))
 
+        // Секция с кнопками управления
         DisplayController(
             onPreviousClick = {
                 currentArtwork = when (currentArtwork) {
@@ -123,6 +132,7 @@ fun ArtSpaceApp() {
 fun ArtworkWall(
     imageRes: Int,
     contentDescription: String,
+    backgroundColor: Color,
     modifier: Modifier = Modifier
 ) {
     Surface(
@@ -132,7 +142,7 @@ fun ArtworkWall(
                 elevation = 8.dp,
                 spotColor = Color.Black.copy(alpha = 0.3f)
             ),
-        color = Color.White
+        color = backgroundColor
     ) {
         Image(
             painter = painterResource(id = imageRes),
@@ -239,7 +249,8 @@ data class ArtworkInfo(
     val imageRes: Int,
     val title: String,
     val artist: String,
-    val year: String
+    val year: String,
+    val backgroundColor: Color
 )
 
 @Preview(showBackground = true)
