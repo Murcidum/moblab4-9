@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">10 дней Котяток</string>
+    <string name="day_number">День %d</string>
+    <string name="show_more">Показать больше</string>
+    <string name="show_less">Показать меньше</string>
+    
+    <!-- Day 1 -->
+    <string name="day1_title">Смешной котенок 1</string>
+    <string name="day1_description">Котенок swag</string>
+    
+    <!-- Day 2 -->
+    <string name="day2_title">Смешной котенок 2</string>
+    <string name="day2_description">Кот с ммм земляникой</string>
+    
+    <!-- Day 3 -->
+    <string name="day3_title">Смешной котенок 3</string>
+    <string name="day3_description">Братва рвется</string>
+    
+    <!-- Day 4 -->
+    <string name="day4_title">Смешной котенок 4</string>
+    <string name="day4_description">Угадай животное</string>
+    
+    <!-- Day 5 -->
+    <string name="day5_title">Смешной котенок 5</string>
+    <string name="day5_description">Он обяхательно сможет</string>
+    
+    <!-- Day 6 -->
+    <string name="day6_title">Смешной котенок 6</string>
+    <string name="day6_description">Цикл котенка</string>
+    
+    <!-- Day 7 -->
+    <string name="day7_title">Смешной котенок 7</string>
+    <string name="day7_description">Кот булочка</string>
+    
+    <!-- Day 8 -->
+    <string name="day8_title">Смешной котенок 8</string>
+    <string name="day8_description">Отлучен от церкви</string>
+    
+    <!-- Day 9 -->
+    <string name="day9_title">Смешной котенок 9</string>
+    <string name="day9_description">Согласен</string>
+    
+    <!-- Day 10 -->
+    <string name="day10_title">Смешной котенок 10</string>
+    <string name="day10_description">мммммммм суббота</string>
+</resources>
