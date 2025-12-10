@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -62,7 +63,7 @@ fun HeroesList(
             animationSpec = spring(dampingRatio = DampingRatioLowBouncy)
         ),
         exit = fadeOut(),
-        modifier = modifier
+        modifier = modifier.fillMaxHeight(0.5f)
     ) {
         LazyColumn(contentPadding = contentPadding) {
             itemsIndexed(heroes) { index, hero ->
