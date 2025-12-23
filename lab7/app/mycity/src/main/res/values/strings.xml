@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мой Магнитогорск</string>
+    
+    <!-- Categories -->
+    <string name="category_restaurants">Рестораны</string>
+    <string name="category_attractions">Достопримечательности</string>
+    <string name="category_parks">Парки</string>
+    <string name="category_museums">Музеи</string>
+    
+    <!-- Navigation -->
+    <string name="back">Назад</string>
+    <string name="categories">Категории</string>
+    
+    <!-- Place details -->
+    <string name="address">Адрес</string>
+    <string name="phone">Телефон</string>
+    <string name="description">Описание</string>
+    <string name="rating">Рейтинг</string>
+</resources>

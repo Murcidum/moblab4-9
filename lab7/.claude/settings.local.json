@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"./gradlew.bat\" :app:cupcake-navigation:assembleDebug)",
+      "Bash(./gradlew.bat :app:cupcake-navigation:assembleDebug)"
+    ]
+  }
+}
