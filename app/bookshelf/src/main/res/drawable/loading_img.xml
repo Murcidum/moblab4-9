@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Круг загрузки с анимацией -->
+    <group
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0">
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M50,10 A40,40 0 1,1 50,90 A40,40 0 0,1 50,10"
+            android:strokeColor="#6200EE"
+            android:strokeWidth="8"
+            android:strokeLineCap="round"
+            android:trimPathStart="0"
+            android:trimPathEnd="0.75"
+            android:trimPathOffset="0"/>
+    </group>
+</vector>
